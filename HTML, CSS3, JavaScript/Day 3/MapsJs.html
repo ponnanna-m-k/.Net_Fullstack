@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Implementing Maps using Set() in JS</h3>
+    <p id="txt1"></p>
+    <p id="txt2"></p>
+    <script>
+        // Creating bike collection
+        const bikes = new Map();
+
+        // Adding values into bikes collection
+        bikes.set("R15", 150000);
+        bikes.set("Duke", 223000);
+        bikes.set("NS", 145000);
+        bikes.set("RS", 175000);
+
+        // Displaying collections
+        let val = "";
+        let val2="";
+        // var txt = bikes.values();
+        bikes.forEach(function (key,value){
+            val += value + "<br>";
+            val2 += key + "<br>";
+        })
+        document.getElementById("txt1").innerHTML = val;
+        document.getElementById("txt2").innerHTML = val2;
+        
+    </script>
+</body>
+</html>
