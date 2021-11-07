@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        JS Demo
+    </title>
+</head>
+<body style="color: white;">
+    <div id="top" style="color:gray; padding: 2px;">
+        <h1 style="color: teal; text-align: center; font-size: 3em;">Time & Date</h1>
+    </div>      
+    <p id="test" style="text-align: center; color: black; font-size: 2em;">       
+    </p>
+    </div>
+    <div style="text-align: center;">
+    <button onclick="btn_clk()">Click Here</button>
+    <div id="btm" style="color:gray; text-align: center; padding-top: 100px;">
+    <h6>Twitter  ||  Facebook  ||  LinkedIn</h6>
+
+    </div>
+    <script>
+        var a = new Date();
+        // var b = a.getDate();
+        var c = a.getHours();
+        var d = a.getMinutes()
+        function btn_clk()
+        {
+           document.getElementById("test").innerHTML ="Current Time : "+ c +":"+ d; 
+        }
+    </script>
+</body>
+</html>
